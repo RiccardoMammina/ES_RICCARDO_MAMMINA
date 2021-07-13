@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione HTML</title>
+    <style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+            <label for="pw">Password</label>
+            <input type="password" id="pw" name="password">
+        </div>
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name">
+            <label for="sur">Cognome</label>
+            <input type="text" id="sur" name="surname">
+            <label for="DoB">Data di Nascita</label>
+            <input type="date" id="DoB" name="Date_Birth">
+            <label for="tel-numb">Numero di Telefono</label>
+            <input type="tel" id="tel-numb" name="telephone">
+        </div>
+
+        <div>
+            <label for="sub">Piano di Abbonamento</label>
+            <select name="subscription" id="sub">
+                <option value="0">Gratis</option>
+                <optgroup label="Mensile">
+                    <option value="199">1.99€ mensile</option>
+                    <option value="599">5.99€ mensile</option>
+                    <option value="1199">11.99€ mensile</option>
+                </optgroup>
+            </select>
+            <label for="sub-pro">Abbonamenti Pro</label>
+            <input type="checkbox" id="sub-pro" name="premium">
+        </div>
+
+        <div>
+            <label for="Card-N">Numero Carta</label>
+            <input type="number" id="Card-N" name="CreditCardN">
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc">
+            <label for="Scad">Scadenza</label>
+            <input type="date" name="scad" id="Scad">
+            <label for="address">Indirizzo di fatturazione</label>
+            <input type="text" name="address" id="address">
+        </div>
+        
+        <div>
+            <button type="submit">Registrati</button>
+        </div>
+    </form>
+</body>
+</html>
